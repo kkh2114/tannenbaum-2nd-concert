@@ -10,8 +10,8 @@ export default function Program() {
       <SectionTitle eyebrow="Program" title="공연 프로그램" />
 
       <div className="mt-14 flex flex-col gap-[clamp(28px,4vh,44px)]">
-        {program.map((grp) => (
-          <div key={grp.genre + grp.genreEn}>
+        {program.map((grp, gi) => (
+          <div key={`${grp.genre}-${gi}`}>
             {/* genre header */}
             <div className="mb-4 flex items-baseline gap-3">
               <span
@@ -38,51 +38,73 @@ export default function Program() {
                 return (
                   <RevealItem key={pc.title}>
                     <div
-                      className="group grid grid-cols-[auto_1fr] items-baseline gap-x-4 gap-y-1 border-b py-3.5 transition-colors sm:grid-cols-[auto_1fr_auto]"
+                      className="group grid grid-cols-[auto_1fr] gap-x-4 border-b py-4 transition-colors"
                       style={{
                         borderColor:
                           "color-mix(in srgb, var(--muted) 22%, transparent)",
                       }}
                     >
                       <span
-                        className="font-latin"
+                        className="font-latin pt-1"
                         style={{ color: "var(--gold)", fontSize: 15, minWidth: 24 }}
                       >
                         {num}
                       </span>
-                      <span
-                        className="font-serif"
-                        style={{
-                          fontSize: "clamp(16px,2.2vw,19px)",
-                          color: "var(--ink)",
-                          lineHeight: 1.4,
-                        }}
-                      >
-                        {pc.title}
-                        {pc.note && (
+
+                      <div className="min-w-0">
+                        {/* title + credit */}
+                        <div className="flex flex-wrap items-baseline gap-x-3 gap-y-0.5">
                           <span
+                            className="font-serif"
                             style={{
-                              color: "var(--muted)",
-                              fontSize: 13,
-                              marginLeft: 8,
+                              fontSize: "clamp(16px,2.2vw,19px)",
+                              color: "var(--ink)",
+                              lineHeight: 1.35,
                             }}
                           >
-                            {pc.note}
+                            {pc.title}
                           </span>
+                          {pc.credit && (
+                            <span
+                              style={{
+                                color: "var(--gold-soft)",
+                                fontSize: 12.5,
+                                letterSpacing: "0.01em",
+                              }}
+                            >
+                              {pc.credit}
+                            </span>
+                          )}
+                        </div>
+
+                        {/* desc */}
+                        {pc.desc && (
+                          <p
+                            className="mt-1.5"
+                            style={{
+                              color: "var(--muted)",
+                              fontSize: 13.5,
+                              lineHeight: 1.65,
+                            }}
+                          >
+                            {pc.desc}
+                          </p>
                         )}
-                      </span>
-                      {pc.solo && (
-                        <span
-                          className="col-start-2 sm:col-start-3 sm:text-right"
-                          style={{
-                            color: "var(--burgundy)",
-                            fontSize: 13,
-                            lineHeight: 1.6,
-                          }}
-                        >
-                          {pc.solo}
-                        </span>
-                      )}
+
+                        {/* solo */}
+                        {pc.solo && (
+                          <p
+                            className="mt-1.5"
+                            style={{
+                              color: "var(--burgundy)",
+                              fontSize: 12.5,
+                              lineHeight: 1.6,
+                            }}
+                          >
+                            {pc.solo}
+                          </p>
+                        )}
+                      </div>
                     </div>
                   </RevealItem>
                 );
