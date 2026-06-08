@@ -135,11 +135,12 @@ export default function Hero() {
           className="mt-10 flex flex-col items-center gap-2.5"
         >
           <span
-            className="spaced-kr"
+            className="spaced-kr font-serif"
             style={{
               color: "var(--gold)",
               fontWeight: 500,
-              fontSize: "clamp(12px, 1.8vw, 14px)",
+              fontSize: "clamp(26px, 4.4vw, 38px)",
+              lineHeight: 1.3,
             }}
           >
             {concert.edition}
