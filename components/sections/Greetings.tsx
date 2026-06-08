@@ -4,11 +4,10 @@ import Reveal from "../ui/Reveal";
 import {
   chairmanGreeting,
   conductorGreeting,
-  pianistGreeting,
   type Greeting,
 } from "@/content/greetings";
 
-const list = [chairmanGreeting, conductorGreeting, pianistGreeting];
+const list = [chairmanGreeting, conductorGreeting];
 
 export default function Greetings() {
   return (

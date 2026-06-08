@@ -20,8 +20,6 @@ export const concert = {
   // 장소 (확정)
   venue: "성담교회 대예배당",
   address: "서울특별시 성동구 용답중앙길 48",
-  // 오시는 길 — TODO: 정확한 교통편 확인
-  transit: "지하철 2호선 용답역 인근 · 자세한 교통편은 추후 안내",
 
   // 지도 (주소 기반 임베드) — 구글맵 q= 주소
   mapEmbedSrc:

@@ -30,9 +30,6 @@ export default function ConcertInfo() {
                 {concert.venue}
               </p>
               <p style={smallStyle}>{concert.address}</p>
-              <p style={{ ...smallStyle, color: "var(--burgundy)" }}>
-                {concert.transit}
-              </p>
             </InfoCell>
           </div>
 
