@@ -1,0 +1,52 @@
+// 공연 기본 정보 — 단일 출처(Single Source of Truth)
+// 제2회 정기연주회 확정 정보. 교체가 필요한 항목은 TODO 표시.
+
+export const concert = {
+  ensemble: "탄넨바움 남성중창단",
+  ensembleEn: "Tannenbaum Men's Choir",
+  title: "제2회 정기연주회",
+  edition: "제 2 회 정 기 연 주 회",
+  heroQuote: ["남성중창단의", "깊은 울림에 젖어 듭니다"],
+  heroQuoteEmphasis: "울림",
+  heroSubtitle: "We warmly welcome you to our second regular concert",
+  slogan: "음악으로 하나되는 우리의 이야기",
+
+  // 일시 (확정)
+  date: "2026. 6. 27 (토)",
+  time: "오후 4시",
+  dateFull: "2026년 6월 27일 토요일 오후 4시",
+  dateShort: "2026.6.27 SAT 16:00",
+
+  // 장소 (확정)
+  venue: "성담교회 대예배당",
+  address: "서울특별시 성동구 용답중앙길 48",
+  // 오시는 길 — TODO: 정확한 교통편 확인
+  transit: "지하철 2호선 용답역 인근 · 자세한 교통편은 추후 안내",
+
+  // 지도 (주소 기반 임베드) — 구글맵 q= 주소
+  mapEmbedSrc:
+    "https://www.google.com/maps?q=" +
+    encodeURIComponent("서울특별시 성동구 용답중앙길 48 성담교회") +
+    "&output=embed",
+  mapLink:
+    "https://map.naver.com/p/search/" +
+    encodeURIComponent("성담교회 용답중앙길 48"),
+
+  // 1회 연주 실황 유튜브 — TODO: 실제 링크 입력 시 영상 섹션 자동 활성화
+  // 예) "https://www.youtube.com/watch?v=XXXX" 또는 "XXXX"(영상 ID)
+  pastVideoUrl: "" as string,
+  pastVideoCaption: "지난 무대 — 제1회 창단연주회 (2025.6.14)",
+
+  // 참여 구글폼 — TODO: 실제 폼 URL 입력
+  rsvpFormUrl: "" as string, // 참석 여부(RSVP) 구글폼
+  reviewFormUrl: "" as string, // 공연 소감 구글폼
+
+  // 문의 — 1회 정보 차용(TODO: 제2회 확인)
+  contactPhone: "010-9105-2944",
+  contactName: "한용연 단무장",
+  bandName: "탄넨바움 남성중창단 (네이버 밴드)",
+  bandUrl: "" as string, // TODO: 밴드 링크
+  practicePlace: "화도 드림교회 (남양주시 화도읍)", // TODO: 제2회 확인
+};
+
+export type Concert = typeof concert;
