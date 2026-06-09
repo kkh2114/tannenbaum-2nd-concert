@@ -18,17 +18,17 @@ export const concert = {
   dateShort: "2026.6.27 SAT 16:00",
 
   // 장소 (확정)
-  venue: "성담교회 대예배당",
+  venue: "성답교회 대예배당",
   address: "서울특별시 성동구 용답중앙길 48",
 
   // 지도 (주소 기반 임베드) — 구글맵 q= 주소
   mapEmbedSrc:
     "https://www.google.com/maps?q=" +
-    encodeURIComponent("서울특별시 성동구 용답중앙길 48 성담교회") +
+    encodeURIComponent("서울특별시 성동구 용답중앙길 48 성답교회") +
     "&output=embed",
   mapLink:
     "https://map.naver.com/p/search/" +
-    encodeURIComponent("성담교회 용답중앙길 48"),
+    encodeURIComponent("성답교회 용답중앙길 48"),
 
   // 1회 연주 실황 유튜브 — TODO: 실제 링크 입력 시 영상 섹션 자동 활성화
   // 예) "https://www.youtube.com/watch?v=XXXX" 또는 "XXXX"(영상 ID)
