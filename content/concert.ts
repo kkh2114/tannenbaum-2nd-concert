@@ -35,15 +35,15 @@ export const concert = {
   pastVideoUrl: "" as string,
   pastVideoCaption: "지난 무대 — 제1회 창단연주회 (2025.6.14)",
 
-  // 참여 구글폼 — TODO: 실제 폼 URL 입력
-  rsvpFormUrl: "" as string, // 참석 여부(RSVP) 구글폼
-  reviewFormUrl: "" as string, // 공연 소감 구글폼
+  // 참여 구글폼
+  rsvpFormUrl: "https://forms.gle/EaFDVjATGfGG29ZBA", // 참석 여부(RSVP) 구글폼
+  reviewFormUrl: "https://forms.gle/unnh7CE2ddWBsa379", // 공연 소감 구글폼
 
   // 문의 — 1회 정보 차용(TODO: 제2회 확인)
   contactPhone: "010-9105-2944",
   contactName: "한용연 단무장",
   bandName: "탄넨바움 남성중창단 (네이버 밴드)",
-  bandUrl: "" as string, // TODO: 밴드 링크
+  bandUrl: "https://band.us/n/acacb092K165d", // 네이버 밴드
   practicePlace: "화도 드림교회 (남양주시 화도읍)", // TODO: 제2회 확인
 };
 
