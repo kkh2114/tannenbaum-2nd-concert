@@ -32,7 +32,7 @@ export const concert = {
 
   // 1회 연주 실황 유튜브 — TODO: 실제 링크 입력 시 영상 섹션 자동 활성화
   // 예) "https://www.youtube.com/watch?v=XXXX" 또는 "XXXX"(영상 ID)
-  pastVideoUrl: "" as string,
+  pastVideoUrl: "https://www.youtube.com/watch?v=45T8z4dhK1o",
   pastVideoCaption: "지난 무대 — 제1회 창단연주회 (2025.6.14)",
 
   // 참여 구글폼

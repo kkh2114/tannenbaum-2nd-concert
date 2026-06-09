@@ -24,9 +24,9 @@ export default function Home() {
         <ConcertInfo />
         <Greetings />
         <Members />
+        <PastVideo />
         <Profiles />
         <Program />
-        <PastVideo />
         <Closing />
         <Participate />
         <Contact />
