@@ -1,16 +1,36 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
+const SITE_URL = "https://tannenbaum-2nd-concert.vercel.app";
+const OG_DESC =
+  "남성중창단의 깊은 울림에 젖어 듭니다 — 2026.6.27(토) 오후 4시, 성담교회 대예배당";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "제2회 탄넨바움 정기연주회 | 탄넨바움 남성중창단",
   description:
     "탄넨바움 남성중창단 제2회 정기연주회 — 2026년 6월 27일(토) 오후 4시, 성담교회 대예배당. 남성중창단의 깊은 울림에 젖어 듭니다.",
   openGraph: {
     title: "제2회 탄넨바움 정기연주회",
-    description:
-      "남성중창단의 깊은 울림에 젖어 듭니다 — 2026.6.27(토) 16:00, 성담교회 대예배당",
+    description: OG_DESC,
+    url: SITE_URL,
+    siteName: "탄넨바움 남성중창단",
     type: "website",
     locale: "ko_KR",
+    images: [
+      {
+        url: "/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "제2회 탄넨바움 정기연주회",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "제2회 탄넨바움 정기연주회",
+    description: OG_DESC,
+    images: ["/og.jpg"],
   },
 };
 
