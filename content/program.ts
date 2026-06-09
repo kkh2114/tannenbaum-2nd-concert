@@ -61,7 +61,7 @@ export const program: ProgramGroup[] = [
       },
       {
         title: "가지산 억새바람",
-        credit: "한국 가곡",
+        credit: "이자역 작사 · 장일군·윤문·이수인 작곡",
         desc: "가을 가지산 능선을 가득 메운 은빛 억새와 바람의 정취를 노래한 가곡입니다.",
       },
     ],
@@ -84,12 +84,12 @@ export const program: ProgramGroup[] = [
     pieces: [
       {
         title: "섬집아기",
-        credit: "한인현 시 · 이흥렬 곡",
+        credit: "한인현 시 · 이흥렬 곡 · 송정 편곡",
         desc: "엄마를 기다리는 섬마을 아기의 모습을 자장가처럼 그린 국민 동요입니다.",
       },
       {
         title: "과수원길",
-        credit: "박화목 시 · 김공선 곡",
+        credit: "박화목 시 · 김공선 곡 · 백현주 편곡",
         desc: "아카시아 꽃 흩날리는 과수원길의 정겨운 풍경을 노래한 동요입니다.",
       },
     ],
@@ -106,7 +106,7 @@ export const program: ProgramGroup[] = [
       },
       {
         title: "경복궁타령",
-        credit: "경기 민요",
+        credit: "경기 민요 · 김희조 편곡",
         desc: "경복궁 중건 시절 백성들의 애환과 흥을 함께 담아낸 흥겨운 경기 민요입니다.",
       },
     ],
@@ -153,14 +153,14 @@ export const program: ProgramGroup[] = [
     genreEn: "Popular",
     pieces: [
       {
-        title: "가요반세기",
-        credit: "대중가요 메들리",
+        title: "가요반세기 2 (해방과 분단)",
+        credit: "대중가요 메들리 · 조우현 편곡",
         solo: "Tp. 박인국",
-        desc: "반세기를 이어 온 한국 대중가요의 명곡들을 트럼펫과 함께 메들리로 엮었습니다.",
+        desc: "해방과 분단의 시대를 가로지른 한국 대중가요의 명곡들을 트럼펫과 함께 메들리로 엮었습니다.",
       },
       {
         title: "바람의 노래",
-        credit: "김순곤 시 · 김정욱 곡",
+        credit: "김순곤 시 · 김정욱 곡 · 황소라 편곡",
         desc: "지나온 삶을 바람에 빗대어 관조하는, 조용필의 깊은 울림이 담긴 노래입니다.",
       },
     ],
@@ -176,7 +176,7 @@ export const program: ProgramGroup[] = [
       },
       {
         title: "사랑이여",
-        credit: "최용식 작사·작곡",
+        credit: "최용식 작사·작곡 · 조우현 편곡",
         desc: "유심초가 부른 불멸의 사랑 노래로, 못다 이룬 사랑의 애틋함을 담았습니다.",
       },
     ],
