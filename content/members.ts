@@ -45,7 +45,6 @@ export const parts: Part[] = [
       { name: "남상흔", slug: "namsangheun" },
       { name: "전홍준", slug: "jeonhongjoon" },
       { name: "정기채", slug: "jeonggichae" },
-      { name: "박인국", slug: "parkingook" },
     ],
   },
   {
@@ -53,8 +52,9 @@ export const parts: Part[] = [
     label: "Bass",
     labelKr: "베이스",
     members: [
-      { name: "한용연", slug: "hanyongyeon" },
+      { name: "박인국", slug: "parkingook" },
       { name: "이택근", slug: "leetaekgeun" },
+      { name: "한용연", slug: "hanyongyeon" },
     ],
   },
 ];

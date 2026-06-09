@@ -124,14 +124,14 @@ export const program: ProgramGroup[] = [
     ],
   },
   {
-    genre: "남성 8중창",
-    genreEn: "Men's Octet",
+    genre: "복사중창",
+    genreEn: "Double Quartet",
     pieces: [
       {
         title: "그대 떠난 빈들에 서서",
         credit: "심재경 곡 · 1983 대학가요제 대상",
         solo:
-          "Ten1. 신성운·한상호 / Ten2. 이계원·김민규 / Bar. 남상흔·전홍준 / Bass. 한용연·이택근",
+          "Ten1. 신성운·한상호 / Ten2. 김민규·이계원 / Bar. 남상흔·전홍준 / Bass. 이택근·한용연",
         desc: "떠난 이를 향한 애틋한 그리움을 여덟 남성의 깊은 화음으로 펼쳐냅니다.",
       },
     ],
