@@ -21,11 +21,12 @@ export const concert = {
   venue: "성답교회 대예배당",
   address: "서울특별시 성동구 용답중앙길 48",
 
-  // 지도 (주소 기반 임베드) — 구글맵 q= 주소
+  // 지도 임베드 — OpenStreetMap (API 키 불필요, 모바일·PC 모두 안정적으로 표시)
+  // 좌표: 성답교회(서울 성동구 용답중앙길 48) 37.5635666, 127.0531542
   mapEmbedSrc:
-    "https://www.google.com/maps?q=" +
-    encodeURIComponent("서울특별시 성동구 용답중앙길 48 성답교회") +
-    "&output=embed",
+    "https://www.openstreetmap.org/export/embed.html?bbox=" +
+    "127.0491542%2C37.5610666%2C127.0571542%2C37.5660666" +
+    "&layer=mapnik&marker=37.5635666%2C127.0531542",
   mapLink:
     "https://map.naver.com/p/search/" +
     encodeURIComponent("성답교회 용답중앙길 48"),
