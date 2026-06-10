@@ -56,7 +56,7 @@ export const program: ProgramGroup[] = [
       {
         title: "고향의 노래",
         credit: "김재호 시 · 이수인 곡",
-        solo: "Solo. Ten. 김태형 · Ten. 한상호",
+        solo: "Solo. Ten. 김태형",
         desc: "떠나온 고향과 어머니를 향한 그리움을 담아 1968년 작곡된 한국 가곡의 명곡입니다.",
       },
       {
@@ -124,6 +124,18 @@ export const program: ProgramGroup[] = [
     ],
   },
   {
+    genre: "독창",
+    genreEn: "Solo",
+    pieces: [
+      {
+        title: "마중",
+        credit: "허림 시 · 윤학준 곡",
+        solo: "Bariton. 정기채",
+        desc: "사랑하는 이를 마중 나가는 설렘과 그리움을 담은 창작 가곡입니다.",
+      },
+    ],
+  },
+  {
     genre: "복사중창",
     genreEn: "Double Quartet",
     pieces: [
@@ -133,18 +145,6 @@ export const program: ProgramGroup[] = [
         solo:
           "Ten1. 신성운·한상호 / Ten2. 김민규·이계원 / Bar. 남상흔·전홍준 / Bass. 이택근·한용연",
         desc: "떠난 이를 향한 애틋한 그리움을 여덟 남성의 깊은 화음으로 펼쳐냅니다.",
-      },
-    ],
-  },
-  {
-    genre: "독창",
-    genreEn: "Solo",
-    pieces: [
-      {
-        title: "마중",
-        credit: "허림 시 · 윤학준 곡",
-        solo: "Bariton. 정기채",
-        desc: "사랑하는 이를 마중 나가는 설렘과 그리움을 담은 창작 가곡입니다.",
       },
     ],
   },
@@ -162,22 +162,6 @@ export const program: ProgramGroup[] = [
         title: "바람의 노래",
         credit: "김순곤 시 · 김정욱 곡 · 황소라 편곡",
         desc: "지나온 삶을 바람에 빗대어 관조하는, 조용필의 깊은 울림이 담긴 노래입니다.",
-      },
-    ],
-  },
-  {
-    genre: "앵콜",
-    genreEn: "Encore",
-    pieces: [
-      {
-        title: "송축하리 내 영혼",
-        credit: "Matt Redman 곡 · 10,000 Reasons",
-        desc: "주님을 송축하는 벅찬 마음을 노래하는, 전 세계가 사랑하는 현대 찬양입니다.",
-      },
-      {
-        title: "사랑이여",
-        credit: "최용식 작사·작곡 · 조우현 편곡",
-        desc: "유심초가 부른 불멸의 사랑 노래로, 못다 이룬 사랑의 애틋함을 담았습니다.",
       },
     ],
   },
