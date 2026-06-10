@@ -61,7 +61,7 @@ export const program: ProgramGroup[] = [
       },
       {
         title: "가지산 억새바람",
-        credit: "이자역 작사 · 장일군·이수인 작곡",
+        credit: "이자영 작사 · 정일근 윤문 · 이수인 작곡",
         desc: "가을 가지산 능선을 가득 메운 은빛 억새와 바람의 정취를 노래한 가곡입니다.",
       },
     ],
