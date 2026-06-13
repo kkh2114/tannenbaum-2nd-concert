@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Watercolor from "../ui/Watercolor";
+import Countdown from "../ui/Countdown";
 import { concert } from "@/content/concert";
 
 const up = {
@@ -44,7 +45,7 @@ export default function Hero() {
       id="hero"
       data-density="light"
       className="anchor relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden text-center"
-      style={{ paddingInline: "clamp(20px,5vw,40px)", paddingBlock: "6vh" }}
+      style={{ paddingInline: "clamp(20px,5vw,40px)", paddingBlock: "6vh 16vh" }}
     >
       <Watercolor variant="dark" />
 
@@ -135,12 +136,14 @@ export default function Hero() {
           className="mt-10 flex flex-col items-center gap-2.5"
         >
           <span
-            className="spaced-kr font-serif"
+            className="font-serif"
             style={{
               color: "var(--gold)",
               fontWeight: 500,
-              fontSize: "clamp(26px, 4.4vw, 38px)",
+              fontSize: "clamp(22px, 4.4vw, 38px)",
               lineHeight: 1.3,
+              letterSpacing: "clamp(0.04em, 1vw, 0.28em)",
+              whiteSpace: "nowrap",
             }}
           >
             {concert.edition}
@@ -157,6 +160,16 @@ export default function Hero() {
           <span style={{ color: "rgba(243,233,220,.6)", fontSize: "clamp(13px,2vw,15px)" }}>
             {concert.venue}
           </span>
+        </motion.div>
+
+        <motion.div
+          custom={1.18}
+          variants={up}
+          initial="hidden"
+          animate="show"
+          className="mt-9"
+        >
+          <Countdown targetISO={concert.dateISO} />
         </motion.div>
       </div>
 
